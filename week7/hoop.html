@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Hoop Program</title>
+<style type="text/css">
+body
+{
+	background-color: white;
+}
+h1
+{
+	color:pink;
+	text-shadow:3px 3px 3px pink;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-style: italic;
+}
+p.message 
+{
+	font-family: sans-serif;
+	color: green;
+	font-weight: bold;
+	font-size:18px;
+}
+</style>
+</head>
+<body>
+<center><h1>Hoop Program</h1></center>
+<br />
+<center>
+<fieldset>
+	<legend>Enter your hoop number:</legend>
+	<form action="hoop.html" method="GET" enctype="application/x-www-form-urlencoded" onsubmit="return false;">
+		<label for="number">Number:&nbsp;<input type="text" name="hoopn" id="hoopn" placeholder="Enter your hoop number" required="required" /><label><br />
+		<input type="submit" id="hs" value="Hoop" onclick="return hoopP();" />
+	</form>
+</fieldset>
+<br />
+<div id="jsD">
+</div>
+</center>
+<script type="text/javascript" src="hoop.js"></script>
+</body>
+</html>
