@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="css.css" />
+<title>My SPA</title>
+</head>
+<body>
+<h1>Search for hacking issues</h1>
+<form action="" method="GET" onsubmit="return false;">
+  <input type="search" id="search" placeholder="Enter your search term" required />
+  <input type="submit" id="searchBtn" value="Search" onclick="fetchData(document.getElementById('search').value);" />
+</form>
+<div class ="loader invisible" id ="resultLoader"></div>
+<article id="resultEl">
+</article>
+<script type="text/javascript" src="myspa.js"></script>
+</body>
+</html>
